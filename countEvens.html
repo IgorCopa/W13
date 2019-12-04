@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Count Evens</title>
+</head>
+<body>
+    
+
+    <script>
+
+        const list = [12, -4, 8, 15, 17, -5, 20, 11];
+        const evens = [];
+
+        function countEvens(list){
+            for(let nums of list){
+                if(nums % 2 === 0){
+                    evens.push(nums);
+                }
+            }
+            return evens;
+        }
+
+        const evenNumbers = countEvens(list);
+        console.log(evens.length);
+    
+    </script>
+    
+</body>
+</html>
